@@ -58,12 +58,15 @@ reg query "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Softw
 ### 3.1. 웹 브라우저
 - **[Chrome](https://www.google.com/intl/ko_kr/chrome/)**: 구글 동기화 및 확장 프로그램 활용
 
-### 3.2. 압축 프로그램 (택 1)
+### 3.2. 메신저 및 커뮤니케이션
+- **[카카오톡 (Microsoft Store 버전)](https://apps.microsoft.com/detail/xp9k178l5g0jq0?launch=true&hl=ko-kr&gl=kr)**
+
+### 3.3. 압축 프로그램 (택 1)
 - **[NanaZip](https://github.com/M2Team/NanaZip)**: 윈도우 11 컨텍스트 메뉴(우클릭) 완벽 지원, 오픈소스.
 - **[반디집 6.29 (구버전)](https://kr.bandisoft.com/bandizip/old/6/)**: 광고 없는 마지막 무료 버전.
 - **[반디집 (최신)](https://kr.bandisoft.com/bandizip/)**: 최신 기능 지원 (무료 버전 광고 포함).
 
-### 3.3. 시스템 관리 도구
+### 3.4. 시스템 관리 도구
 - **볼륨 제어**: [EarTrumpet](https://apps.microsoft.com/detail/9nblggh516xp) (앱별 볼륨 조절, MS 스토어)
 - **파일 검색**: [Everything](https://www.voidtools.com/ko-kr/downloads/) (압도적인 속도의 로컬 파일 검색)
 - **디스크 관리**: [TreeSize Free](https://www.jam-software.com/treesize) (폴더 용량 시각화)
