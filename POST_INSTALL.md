@@ -34,6 +34,11 @@
     - [ ] 시작 메뉴, 점프 목록 등에서 최근에 연 항목 표시 (해제)
     - [ ] 검색 기록에서 웹 사이트 표시 (해제)
 
+### 1.5. 검색 엔진 변경 (Bing 탈출)
+엣지(Edge)나 크롬 주소창에서 검색 시 Bing 대신 Google이 나오도록 설정합니다.
+- **Edge 브라우저**: `설정` -> `개인 정보, 검색 및 서비스` -> `검색 및 연결된 경험` -> `주소 표시줄 및 검색` -> 검색 엔진을 **[Google]** 로 변경.
+- **Chrome 브라우저**: `설정` -> `검색엔진` -> 주소 표시줄에서 사용되는 검색 엔진 -> **[Google]** 확인.
+
 ---
 
 ## ⌨️ 2. 입력 장치 최적화 (Input Devices)
@@ -51,19 +56,42 @@
 - **제어판** -> `마우스` -> `포인터 옵션` 탭
     - [ ] **포인터 정확도 향상** (체크 해제)
 
+### 2.3. 한글 입력 오류 해결 (전각/반각 이슈)
+한컴오피스를 설치하면 '한컴 입력기'가 추가되어, 게임(LoL, 배그 등)이나 일부 앱에서 전각/반각이 제멋대로 바뀌는 입력 버그가 발생할 수 있습니다. 이때 굳이 한컴 입력기를 삭제하지 않더라도 **입력기(자판 배열)를 'Microsoft 입력기'로 선택**하여 사용하면 문제가 해결됩니다.
+
+- **설정 방법**:
+    1. **입력기 전환**: 키보드의 `Win` + `Space` 키를 누르거나, 작업 표시줄 우측 하단의 **'한'** 아이콘을 클릭합니다.
+    2. **선택**: 목록에서 **Microsoft 입력기**를 선택합니다.
+    3. *팁: 게임이나 프로그램 실행 전, 입력기가 Microsoft 입력기로 설정되어 있는지 확인하세요.*
+
 ---
 
 ## 🚀 3. 시스템 최적화 및 광고 차단 (Optimization & AdBlock)
 
 쾌적한 환경을 위해 광고를 차단하고, 윈도우의 불편한 설정을 수정하는 필수 도구 모음입니다.
 
-### 3.1. 웹 브라우저 광고 차단 (기본)
-별도의 프로그램 설치 없이 크롬/엣지 브라우저에서 광고를 완벽하게 차단하고 싶다면 **uBlock Origin**이 정답입니다.
-- **[uBlock Origin 다운로드](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm)**
-- **특징**: 현존하는 차단기 중 가장 가볍고(CPU/메모리 절약) 성능이 강력합니다.
-- *주의: 유사한 이름(uBlock, AdBlock Plus 등)이 아닌 반드시 **'Origin'**이 붙은 것을 설치하세요.*
+### 3.1. 웹 브라우저 광고 차단 (브라우저별 맞춤 설정)
+사용하는 브라우저 정책에 맞춰 최적의 차단 프로그램을 설치하세요.
 
-### 3.2. 시스템 전체 광고 차단 (심화/유료)
+- **Google Chrome (Lite 버전 필수)**:
+    - 크롬의 확장 프로그램 정책 변경(Manifest V3)으로 인해 Lite 버전을 사용해야 합니다.
+    - **[uBlock Origin Lite 다운로드](https://chromewebstore.google.com/detail/ublock-origin-lite/ddkjiahejlhfcafbddmgiahcphecmpfh)**
+    - **특징**: CPU 점유율이 극도로 낮고 유튜브 광고 차단 성능이 우수합니다.
+
+- **Microsoft Edge (Original 버전 권장)**:
+    - 엣지는 아직 기존 방식(Manifest V2)을 지원하므로, 기능이 더 강력한 원본을 사용하는 것이 유리합니다.
+    - **[uBlock Origin (Original) 다운로드](https://microsoftedge.microsoft.com/addons/detail/ublock-origin/odfafepnkmbhccpbejgmiehpchacaeak)**
+    - **특징**: 커스텀 필터 적용 및 정밀한 차단 설정이 가능합니다.
+
+### 3.2. Microsoft PC Manager (공식 최적화 툴)
+이제 알 수 없는 사제 클리너 프로그램을 쓸 필요가 없습니다. 마이크로소프트에서 직접 만든 가볍고 강력한 관리 도구입니다.
+- **[Microsoft PC Manager 다운로드 (MS Store)](https://apps.microsoft.com/detail/9pm860492szd?hl=ko-KR&gl=KR)**
+- **주요 기능**:
+    - **Boost**: 클릭 한 번으로 메모리 확보 및 임시 파일 제거.
+    - **Health Check**: 시스템 정리 및 바이러스 검사, 시작 프로그램 관리.
+    - **Pop-up Management**: 앱 내에서 발생하는 성가신 팝업 창 차단.
+
+### 3.3. 시스템 전체 광고 차단 (심화/유료)
 웹 브라우저뿐만 아니라 카카오톡 배너, 프로그램 내 광고까지 시스템 레벨에서 차단하려면 **AdGuard** 설치형 프로그램을 추천합니다.
 - **[AdGuard for Windows](https://adguard.com/)**: 유료 소프트웨어지만 가장 확실한 솔루션입니다.
 - **설정 팁**:
@@ -71,7 +99,7 @@
     2. 크롬 확장 프로그램은 **[AdGuard Browser Assistant](https://chrome.google.com/webstore/detail/adguard-browser-assistant/bgnkhhnnamicmpeenaelnjfhikgbkllg)**를 설치하세요. (PC 프로그램과 연동됨)
     - *주의: 이 경우 **uBlock Origin을 같이 설치하지 마세요.** (기능 충돌 및 성능 저하 원인)*
 
-### 3.3. 윈도우 커스터마이징 (Winaero Tweaker)
+### 3.4. 윈도우 커스터마이징 (Winaero Tweaker)
 윈도우 설정을 강제로 변경하여 사용성을 개선해 주는 무료 트윅(Tweak) 도구입니다.
 - **[다운로드 링크](https://winaero.com/winaero-tweaker/)**
 - **추천 설정**:
@@ -95,4 +123,3 @@
 - **주요 파일**: **`ci.png`**
   - 해당 파일이 프로그램 실행 시 표시되는 **로고 이미지**입니다.
   - *참고: 이 파일이 존재하지 않거나 로딩되지 않으면, 실행 시 로고가 표시되지 않을 수 있습니다.*
----
