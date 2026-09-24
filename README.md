@@ -25,12 +25,36 @@ reg query "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Softw
 - [Microsoft 공식 다운로드 페이지](https://www.microsoft.com/ko-kr/software-download/windows11)
 
 ### 1.4. 부팅 USB 제작 (Rufus 활용)
-공식 툴 대신 Rufus를 사용하여 불필요한 제약 사항을 제거합니다.
-- [Rufus 다운로드](https://rufus.ie/ko/) / [GitHub](https://github.com/pbatard/rufus)
-- **✅ 필수 체크 옵션:**
-    - [x] Remove requirement for 4GB+ RAM, Secure Boot and TPM 2.0 (TPM 우회)
-    - [x] Remove requirement for an online Microsoft account (로컬 계정 사용 가능)
-    - [x] Disable data collection (개인정보 수집 비활성화)
+
+Microsoft 공식 ISO를 Rufus로 USB에 기록합니다.
+
+* [Rufus 다운로드](https://rufus.ie/ko/) / [GitHub](https://github.com/pbatard/rufus)
+* Windows 11 ISO 선택 후 `시작`을 누르면 **Windows User Experience** 옵션이 표시됩니다.
+
+#### 권장 설정
+
+* [x] **Remove requirement for 4GB+ RAM, Secure Boot and TPM 2.0**
+
+  * Windows 11 설치 시 RAM, Secure Boot, TPM 2.0 등의 하드웨어 요구사항 검사를 우회합니다.
+  * PC가 원래 요구사항을 충족하더라도 설치 USB를 범용적으로 사용할 수 있도록 기본 체크합니다.
+  * 이 옵션은 **TPM이나 Secure Boot 자체를 비활성화하는 것이 아니라 설치 프로그램의 요구사항 검사를 제거하는 것**입니다.
+
+* [x] **Remove requirement for an online Microsoft account**
+  * Windows 로그인 계정을 Microsoft 계정이 아닌 **로컬 계정**으로 구성할 수 있도록 합니다.
+  * 
+* [x] **Set regional options to the same values as this user's**
+  * 현재 PC의 언어, 키보드, 시간대 등의 지역 설정을 새 Windows에도 적용합니다.
+
+* [x] **Disable data collection (Skip privacy questions)**
+  * 설치 중 반복되는 개인정보 관련 질문을 건너뜁니다.
+
+#### 선택 설정
+* [ ] **Disable BitLocker automatic device encryption**
+  * Windows 설치 후 자동 장치 암호화를 원하지 않는 경우에만 선택합니다.
+  * BitLocker/장치 암호화는 분실 시 데이터를 보호하는 보안 기능이므로 필요성을 확인한 뒤 선택합니다.
+
+> **참고:** Rufus 및 Windows 11 버전에 따라 표시되는 옵션 이름이나 설치 과정이 조금씩 달라질 수 있습니다.
+
 
 ### 1.5. 비상용 네트워크 드라이버 (3DP Net)
 포맷 직후 인터넷이 잡히지 않는 최악의 상황을 대비합니다.
