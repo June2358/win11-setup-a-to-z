@@ -107,9 +107,34 @@ Microsoft 공식 ISO를 Rufus로 USB에 기록합니다.
 2. 앱 실행 후 **학교 계정**으로 로그인.
 
 ### 4.2. 한글(HWP) 문서 작업
-한컴오피스를 굳이 설치하지 않아도 해결 가능합니다.
-- **[네이버 MyBox](https://mybox.naver.com/)**: 웹에서 HWP 편집 및 저장 가능.
-- **[공공서식 한글](https://www.hancom.com/support/downloadCenter/pubHwp)**: 공공기관 서식 작성용 무료 프로그램 (뷰어+간단한 입력).
+
+#### 네이버 MYBOX
+한컴오피스를 설치하지 않아도 웹에서 HWP/HWPX 문서를 편집할 수 있습니다.
+
+- **[네이버 MYBOX](https://mybox.naver.com/)**
+    - 문서를 MYBOX에 업로드
+    - 한컴오피스 Web으로 열어 편집
+    - 인터넷 연결 필요
+
+#### 공공 한글
+공공기관 민원 서식을 작성하는 용도라면 한컴에서 제공하는 **공공 한글**을 사용할 수 있습니다.
+
+- **[공공 한글](https://download.hancom.com/support/downloadCenter/pubHwp)**
+
+> 예전에 제공되던 **공공서식 한글**은 서비스가 종료되었으며 현재는 **공공 한글**이 제공됩니다.
+
+> 공공 한글은 공공기관 민원 서식 작성 등 지정된 용도를 위한 프로그램이므로 일반적인 한컴오피스 대체 프로그램으로 사용하는 용도와는 다릅니다.
+
+#### rhwp (오픈소스 프로젝트)
+HWP/HWPX 파일을 다루는 오픈소스 프로젝트도 개발되고 있습니다.
+
+- **[rhwp GitHub](https://github.com/edwardkim/rhwp)**
+    - Rust + WebAssembly 기반
+    - HWP / HWPX 뷰어 및 에디터
+    - 웹, CLI, VS Code 확장 등 다양한 형태를 목표로 개발 중
+    - MIT License
+
+> rhwp는 한글과컴퓨터의 공식 프로그램이 아닌 **독립적인 오픈소스 프로젝트**이며 현재도 개발이 진행 중입니다. 복잡한 문서의 완전한 레이아웃 호환성이 중요한 경우에는 한컴오피스나 한컴오피스 Web 등을 우선 사용하는 것이 안전합니다.
 
 ---
 
